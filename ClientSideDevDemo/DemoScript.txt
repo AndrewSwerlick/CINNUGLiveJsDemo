@@ -1,0 +1,38 @@
+﻿Live Js
+	What is it?
+	Show results with live css demo abdut live html
+	Show setup
+Mocha testing
+	What is it
+	Show setup
+		mocha in browser repo
+		simple function, demo.js
+		simple test demo_spec.js
+	Show results with simple test
+		show how live.js auto refreshes
+	Walk through setup.
+
+Slides
+	Title
+	Live.js
+		Monintors for CSS/JS/HTML changes by polling server for updates
+		Applies changes dynamically on the fly
+		Cross platform, simple including the file at the top of your page
+	Alternative Instalation strategies
+		Book marklet
+		Chrome ext
+	Demo CSS Refresh
+		On page
+		On mobile device?
+	Setup
+		Debug conditional htmlhelper
+		Reference in layouts
+	Demo HTML Refresh
+	Demo Javascript Refresh Demo
+	Automated testing
+		Setup
+			Test Runner page
+				simple test system
+			Complex test runner that loads all files
+				Show and explain setup and alternative setups
+		

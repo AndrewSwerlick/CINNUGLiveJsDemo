@@ -1,0 +1,40 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Tests</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="/Scripts/spec/lib/mocha.css" />
+    <script src="/Scripts/live.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery-1.6.2.js" type="text/javascript"></script>
+    <script src="/Scripts/spec/lib/mocha.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <script>
+        function assert(expr, msg) {
+            if (!expr) throw new Error(msg || 'failed');
+        }
+    </script>
+    @foreach (var fullpath in ViewBag.SutFiles)
+    {
+        var fileName = Path.GetFileName(fullpath);
+    <script src="/Scripts/@fileName"></script>
+    }
+    @foreach (var fullpath in ViewBag.TestFiles)
+    {
+        var fileName = Path.GetFileName(fullpath);
+    <script src="/Scripts/spec/@fileName"></script>
+    }    
+    <script>
+        onload = function () {
+            var runner = mocha.run();                       
+        };
+    </script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+  </body>
+</html>
