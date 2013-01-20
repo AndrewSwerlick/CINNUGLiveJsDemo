@@ -1,38 +1,50 @@
-﻿Live Js
-	What is it?
-	Show results with live css demo abdut live html
-	Show setup
-Mocha testing
-	What is it
-	Show setup
-		mocha in browser repo
-		simple function, demo.js
-		simple test demo_spec.js
-	Show results with simple test
-		show how live.js auto refreshes
-	Walk through setup.
-
-Slides
+﻿	Presetup
+		Open VS
+		Open PPT
+		Test wireless and mobile connection
+			get ip address
+			Get mobile device ready
+		Clean up code
+	
 	Title
-	Live.js
+	What Is Live.js
 		Monintors for CSS/JS/HTML changes by polling server for updates
 		Applies changes dynamically on the fly
 		Cross platform, simple including the file at the top of your page
-	Alternative Instalation strategies
-		Book marklet
-		Chrome ext
+		Alternative Instalation strategies
+			Book marklet
+			Chrome ext
 	Demo CSS Refresh
 		On page
-		On mobile device?
-	Setup
-		Debug conditional htmlhelper
-		Reference in layouts
+			Show boring page
+			Copy css from .bk file
+			Magic!!
+		Discuss Setup
+			Debug conditional htmlhelper
+			Reference in layouts
+			Note this is all client side, so works on multiple clients
+		Demo on mobile device
+			Discuss setup
+				Requires IIS Express
+				Have to change IIS Express Settings
+				Have to run netsh command
+					netsh http add urlacl url=http://*:1750/ user=Everyone
+				Have to open up firewall port
 	Demo HTML Refresh
+		Edit home page, show removing a link
 	Demo Javascript Refresh Demo
+		Add alert code, show clicks
+	Transition
+		All this in and of itself is pretty cool, but more fun implications
 	Automated testing
+		Ask how many are testing
+		Note this works with any browser based automated js testing tool
 		Setup
+			Need some sort of HTML page to execute tests and render results.
 			Test Runner page
 				simple test system
 			Complex test runner that loads all files
-				Show and explain setup and alternative setups
+				Show and explain setup 
+					View renders all files in certain folder
+				and alternative setups
 		
