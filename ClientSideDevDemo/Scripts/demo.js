@@ -1,3 +1,3 @@
 ﻿window.Foo = function() {
-    return false;
+    return true;
 }
